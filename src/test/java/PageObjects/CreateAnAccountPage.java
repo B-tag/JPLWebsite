@@ -25,4 +25,13 @@ public class CreateAnAccountPage extends BasePage {
         driver.findElement(By.xpath("//*[@id='email']")).sendKeys(email);
         driver.findElement(By.xpath("//*[@id='passwordCreate']")).sendKeys(password);
     }
+
+    public void selectSubscribeOptions(DataTable table) {
+        List<Map<String,String>> map = table.asMaps();
+        String subscribe = map.get(0).get("subscribe");
+        String johnLewis = map.get(0).get("JohnLewis");
+        String waitrose = map.get(0).get("Waitrose");
+        String johnLewisFinancial = map.get(0).get("JohnLewisFinancial");
+
+    }
 }

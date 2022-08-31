@@ -23,6 +23,8 @@ public class CreateAnAccountStepDef extends BasePage {
     }
 
     @And("I select subscribe option")
-    public void iSelectSubscribeOption(DataTable dataTable) {
+    public void iSelectSubscribeOption(DataTable dataTable) throws IOException {
+        createAnAccountPage.selectSubscribeOptions(dataTable);
+        takeScreenShot();
     }
 }
