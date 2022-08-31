@@ -27,4 +27,10 @@ public class CreateAnAccountStepDef extends BasePage {
         createAnAccountPage.selectSubscribeOptions(dataTable);
         takeScreenShot();
     }
+
+    @And("I click on create account button")
+    public void iClickOnCreateAccountButton() throws IOException {
+        createAnAccountPage.clickOnCreateAccount();
+        takeScreenShot();
+    }
 }

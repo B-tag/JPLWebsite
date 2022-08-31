@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="10.785">
-    <testcase classname="Create an account" name="Create an account" time="10.64">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="22.605">
+    <testcase classname="Create an account" name="Create an account" time="22.236">
         <system-out><![CDATA[Given I navigate to 'https://www.johnlewis.com/' homepage...................passed
 And I accept all cookies....................................................passed
 And I click on login to john lewis button...................................passed
