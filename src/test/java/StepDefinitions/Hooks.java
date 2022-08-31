@@ -25,13 +25,6 @@ public class Hooks {
         this.scenario = scenario;
     }
 
-
-//    @BeforeStep
-//    public void setBeforeStep(Step beforeStep) {
-//        this.beforeStep = beforeStep;
-//        System.out.println("\n" + Hooks.beforeStep.getText());
-//    }
-
     @After
     public void tearDown() {
         driver.close();
