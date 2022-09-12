@@ -7,6 +7,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Hooks {
     public static WebDriver driver;
@@ -18,6 +19,11 @@ public class Hooks {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/Drivers/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
+    }
+
+    @Before
+    public void waitForElement(){
+
     }
 
     @Before

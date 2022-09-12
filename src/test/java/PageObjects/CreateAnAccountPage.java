@@ -34,7 +34,7 @@ public class CreateAnAccountPage extends BasePage {
         String johnLewisFinancial = map.get(0).get("JohnLewisFinancial");
 
         if (subscribe.toLowerCase() == "no") {
-            driver.findElement(By.id("marketingPreferencesNo")).click();
+            driver.findElement(By.xpath("//*[@id='main']/div/div[2]/div[2]/div/form/div[3]/fieldset/div/div[2]/label")).click();
             if ((johnLewis.toLowerCase() == "yes"))
                 driver.findElement(By.xpath("//*[@id='main']/div/div[2]/div[2]/div/form/fieldset/div/div[1]/label")).click();
             if ((waitrose.toLowerCase() == "yes"))
@@ -42,10 +42,28 @@ public class CreateAnAccountPage extends BasePage {
             if ((johnLewisFinancial.toLowerCase() == "yes"))
                 driver.findElement(By.id("//*[@id='main']/div/div[2]/div[2]/div/form/fieldset/div/div[3]/label")).click();
 
-        } else driver.findElement(By.id("marketingPreferences-message")).click();
+        } else driver.findElement(By.xpath("//*[@id='main']/div/div[2]/div[2]/div/form/div[3]/fieldset/div/div[1]/label")).click();
     }
 
     public void clickOnCreateAccount() {
-        driver.findElement(By.id("registerForm")).click();
+        driver.findElement(By.xpath("//*[@id='registerForm']")).click();
+    }
+
+    public void enteringDetails(DataTable table) {
+
+    }
+
+    public void clickAcceptBtn() {
+    }
+
+    public void clickJoinForFree() {
+    }
+
+    public void assertRegistrationComplete() {
+    }
+
+    public void joinTitleAssertion() {
+        String text = driver.findElement(By.xpath("//*[@id='main']/div/h1")).getText();
+        Assert.assertEquals(text, "Join My John Lewis");
     }
 }
