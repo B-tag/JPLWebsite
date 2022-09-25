@@ -4,7 +4,6 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -14,7 +13,6 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
-import java.util.concurrent.TimeUnit;
 
 import static StepDefinitions.Hooks.driver;
 import static StepDefinitions.Hooks.scenario;
@@ -35,8 +33,8 @@ public class BasePage {
         FileUtils.copyFile(screenshot, new File(filePath));
     }
 
-    public void waitForXpath(Duration value,String xPath){
-        WebDriverWait wait=new WebDriverWait(driver, value);
+    public void waitForXpath(Duration value, String xPath) {
+        WebDriverWait wait = new WebDriverWait(driver, value);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xPath)));
     }
 
