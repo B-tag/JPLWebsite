@@ -15,3 +15,4 @@ Feature: Create an account
     And I select subscribe option
       | subscribe | JohnLewis | Waitrose | JohnLewisFinancial |
       | yes       | N/A       | N/A      | N/A                |
+    And I click on create account button

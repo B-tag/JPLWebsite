@@ -1,14 +1,45 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="22.605">
-    <testcase classname="Create an account" name="Create an account" time="22.236">
-        <system-out><![CDATA[Given I navigate to 'https://www.johnlewis.com/' homepage...................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="4.966">
+    <testcase classname="Create an account" name="Create an account" time="4.795">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id='root']/div/header/div/div/div/div[2]/nav/ul/li[1]&quot;}&#10;  (Session info: chrome=104.0.5112.102)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.4.0', revision: 'e5c75ed026a'&#10;System info: host: 'LAPTOP-T80JJVOT', ip: '172.20.144.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [105b9ef30a3d3f67d8b171a3345ca50c, findElement {using=xpath, value=//*[@id='root']/div/header/div/div/div/div[2]/nav/ul/li[1]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\taghi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61305}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61305/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 105b9ef30a3d3f67d8b171a3345ca50c" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given I navigate to 'https://www.johnlewis.com/' homepage...................passed
 And I accept all cookies....................................................passed
-And I click on login to john lewis button...................................passed
-And I should see the login page.............................................passed
-And I select create an account button.......................................passed
-And I should see the 'Create an account' page...............................passed
-And I enter my email and password...........................................passed
-And I select subscribe option...............................................passed
-]]></system-out>
+And I click on login to john lewis button...................................failed
+And I should see the login page.............................................skipped
+And I select create an account button.......................................skipped
+And I should see the 'Create an account' page...............................skipped
+And I enter my email and password...........................................skipped
+And I select subscribe option...............................................skipped
+And I click on create account button........................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='root']/div/header/div/div/div/div[2]/nav/ul/li[1]"}
+  (Session info: chrome=104.0.5112.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'LAPTOP-T80JJVOT', ip: '172.20.144.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [105b9ef30a3d3f67d8b171a3345ca50c, findElement {using=xpath, value=//*[@id='root']/div/header/div/div/div/div[2]/nav/ul/li[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\taghi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61305}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61305/devtoo..., se:cdpVersion: 104.0.5112.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 105b9ef30a3d3f67d8b171a3345ca50c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at PageObjects.JohnLewisHomePage.signIn(JohnLewisHomePage.java:16)
+	at StepDefinitions.HomePageStepDef.i_click_on_login_to_john_lewis_button(HomePageStepDef.java:29)
+	at ✽.I click on login to john lewis button(file:///D:/TestingFrameWork/src/test/resources/Features/createAccount.feature:8)
+]]></failure>
     </testcase>
 </testsuite>
