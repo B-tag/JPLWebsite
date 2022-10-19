@@ -3,3 +3,6 @@ target/*
 
 # temp of screenshots
 tmp/*
+
+# temp of screenshots
+src/test/resources/*
