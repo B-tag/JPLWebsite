@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         , "json:target/JsonReports/JasonReport.json"
 }
 
-        , tags = "@JohnLewisCreateAccount"
+        , tags = "@Google_search"
 )
 
 public class TestRunner {

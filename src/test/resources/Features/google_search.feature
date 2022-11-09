@@ -1,3 +1,4 @@
+@Google_search
 Feature: google search
 
   Scenario Outline: multiple google search
