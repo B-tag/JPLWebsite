@@ -1,7 +1,7 @@
-package StepDefinitions;
+package StepDefinitions.JohnLewis;
 
 import PageFunctions.BasePage;
-import PageObjects.JohnLewisHomePage;
+import PageObjects.JohnLewis.JohnLewisHomePage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 

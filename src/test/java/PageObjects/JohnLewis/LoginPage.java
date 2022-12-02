@@ -1,4 +1,4 @@
-package PageObjects;
+package PageObjects.JohnLewis;
 
 import PageFunctions.BasePage;
 import org.junit.Assert;

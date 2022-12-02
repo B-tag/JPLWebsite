@@ -1,7 +1,7 @@
-package StepDefinitions;
+package StepDefinitions.JohnLewis;
 
 import PageFunctions.BasePage;
-import PageObjects.CreateAnAccountPage;
+import PageObjects.JohnLewis.CreateAnAccountPage;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;

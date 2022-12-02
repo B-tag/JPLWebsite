@@ -1,7 +1,7 @@
-package StepDefinitions;
+package StepDefinitions.JohnLewis;
 
 import PageFunctions.BasePage;
-import PageObjects.LoginPage;
+import PageObjects.JohnLewis.LoginPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
