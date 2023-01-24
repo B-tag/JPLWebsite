@@ -9,12 +9,13 @@ import org.junit.runner.RunWith;
         , monochrome = true
         , stepNotifications = true
         , plugin = {"pretty"
-        , "junit:target/JunitReports/junitReports.xml"
-        , "html:target/HtmlReports"
-        , "json:target/JsonReports/JasonReport.json"
+        , "junit:target/Report/Junit_Reports/junitReports.xml"
+        , "html:target/Report/HTML_Report/HtmlReports.html"
+        , "json:target/Report/cucumber-Report/cucumber.json"
+        , "rerun:target/Report/rerun_Report/rerunReport.txt"
 }
 
-        , tags = "@Google_search"
+        , tags = "@JohnLewisCreateAccount"
 )
 
 public class TestRunner {

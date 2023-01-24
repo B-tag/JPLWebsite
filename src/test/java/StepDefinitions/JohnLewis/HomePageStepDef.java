@@ -18,6 +18,12 @@ public class HomePageStepDef extends BasePage {
         takeScreenShot();
     }
 
+    @Given("I navigate to {string}")
+    public void i_navigate_to(String value) throws IOException {
+        basePage.navigate(value);
+        takeScreenShot();
+    }
+
     @Given("I accept all cookies")
     public void i_accept_all_cookies() throws IOException {
         johnLewisHomePage.acceptCookies();

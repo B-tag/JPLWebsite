@@ -3,6 +3,7 @@ package StepDefinitions;
 
 import io.cucumber.core.gherkin.Step;
 import io.cucumber.java.After;
+import io.cucumber.java.AfterAll;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.WebDriver;
@@ -21,10 +22,6 @@ public class Hooks {
         driver.manage().window().maximize();
     }
 
-    @Before
-    public void waitForElement(){
-
-    }
 
     @Before
     public void setScenario(Scenario scenario) {
@@ -35,5 +32,4 @@ public class Hooks {
     public void tearDown() {
         driver.close();
     }
-
 }
