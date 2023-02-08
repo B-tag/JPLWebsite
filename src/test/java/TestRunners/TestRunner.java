@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         , "rerun:target/Report/rerun_Report/rerunReport.txt"
 }
 
-        , tags = "@JohnLewisCreateAccount"
+        , tags = "@NetCall"
 )
 
 public class TestRunner {
