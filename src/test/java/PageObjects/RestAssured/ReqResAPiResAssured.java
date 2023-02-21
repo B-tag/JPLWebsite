@@ -1,4 +1,4 @@
-package RestAssured;
+package PageObjects.RestAssured;
 
 import io.restassured.response.Response;
 import org.apache.commons.io.FileUtils;
