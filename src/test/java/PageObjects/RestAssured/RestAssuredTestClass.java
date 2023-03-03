@@ -4,6 +4,7 @@ import io.restassured.http.Headers;
 import org.apache.commons.io.FileUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+//import org.junit.Test;
 import org.testng.annotations.Test;
 
 import java.io.File;
@@ -28,11 +29,10 @@ public class RestAssuredTestClass {
     @Test
     public void getCustomerDetails() throws IOException {
         baseURI = "http://demo.guru99.com/V4/sinkministatement.php";
-        String customerDetails = given().queryParam("CUSTOMER_ID", "68195").
-                queryParam("PASSWORD", "1234!").
-                queryParam("Account_No", "1").
-                when().get().
-                then().log().body().toString();
+        String customerDetails =
+                given().queryParam("CUSTOMER_ID", "68195").queryParam("PASSWORD", "1234!").queryParam("Account_No", "1").
+                        when().get().
+                        then().log().body().toString();
         Document document = Jsoup.parse(customerDetails);
         System.out.printf(document.toString());
         FileUtils.writeStringToFile(new File("./tmp/test_Customer.html"), customerDetails, Charset.forName("UTF-8"));

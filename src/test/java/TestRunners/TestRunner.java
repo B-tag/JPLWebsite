@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         , "rerun:target/Report/rerun_Report/rerunReport.txt"
 }
 
-//        , tags = ""
+        , tags = "@Google_search"
 )
 
 public class TestRunner {

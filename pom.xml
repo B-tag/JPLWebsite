@@ -99,6 +99,12 @@
             <version>1.15.3</version>
         </dependency>
 
+        <!--        <dependency>-->
+        <!--            <groupId>net.masterthought</groupId>-->
+        <!--            <artifactId>cucumber-reporting</artifactId>-->
+        <!--            <version>5.6.1</version>-->
+        <!--        </dependency>-->
+
     </dependencies>
 
     <build>
@@ -124,7 +130,7 @@
                         </goals>
                         <configuration>
                             <projectName>JohnLewis</projectName>
-                            <outputDirectory>${project.build.directory}/Report/cucumber-Report/cucumber-report-html
+                            <outputDirectory>${project.build.directory}/Report/cucumber-Report-HTML
                             </outputDirectory>
                             <cucumberOutput>${project.build.directory}/Report/cucumber-Report/cucumber.json
                             </cucumberOutput>
